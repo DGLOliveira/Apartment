@@ -1,0 +1,31 @@
+.tvcontainer:hover > .channelList {
+  width: auto;
+  border: none;
+  opacity: 1;
+}
+.channelList {
+  position: absolute;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  font-size: 60px;
+  width: 0;
+  height: 700px;
+  overflow-y: scroll;
+  color: white;
+  background: rgba(128, 128, 128, 0.671);
+  border: 2px silver solid;
+  opacity: 0;
+  transition: 0.3s;
+}
+.channelList > * {
+  padding: 6px;
+}
+.channelList > *:hover {
+  color: blue;
+  cursor:pointer;
+}
+.collapseHeight {
+  height: 0;
+}

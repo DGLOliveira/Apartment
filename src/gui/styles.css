@@ -1,0 +1,53 @@
+
+#escapeDevice{
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    width: 7vh;
+    height: 7vh;
+    font-size: 5vh;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(0, 0%, 20%);
+    color: white;
+    border-radius: 5px;
+    border-width: 5px;
+    z-index: 10;
+    cursor: pointer;
+}
+#powerDevice{
+    position: absolute;
+    top: 7vh;
+    margin-top:5px;
+    left: 7px;
+    width: 7vh;
+    height: 7vh;
+    font-size: 5vh;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(0, 0%, 20%);
+    border-radius: 5px;
+    border-width: 5px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#target{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    color: black;
+    filter: drop-shadow(0px 0px 1px white);
+    z-index: 5;
+}
