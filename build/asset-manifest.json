@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Apartment/static/css/main.54bed873.css",
+    "main.js": "/Apartment/static/js/main.bb8126f1.js",
+    "static/media/room3.1.glb": "/Apartment/static/media/room3.1.3cfa10c382d6ffbff4a1.glb",
+    "static/media/physical-world-map.jpg": "/Apartment/static/media/physical-world-map.9ed55fc0266f75179d03.jpg",
+    "static/media/WhiteWood.png": "/Apartment/static/media/WhiteWood.92c29aa7c94083665177.png",
+    "static/media/BlueCouch.png": "/Apartment/static/media/BlueCouch.cf43a473fc495bf4f03a.png",
+    "static/media/FurnitureWood.png": "/Apartment/static/media/FurnitureWood.e8cf11d0b0fd1a1fc9c9.png",
+    "static/media/Wall.png": "/Apartment/static/media/Wall.8378e3a9c6e8d127cf5e.png",
+    "static/media/FloorWood1.png": "/Apartment/static/media/FloorWood1.3b12079c381ab3163b81.png",
+    "static/media/WhiteRug.png": "/Apartment/static/media/WhiteRug.08e16323a521c04386ce.png",
+    "static/media/WhitePillow.png": "/Apartment/static/media/WhitePillow.93f992736352eed0fe54.png",
+    "static/media/Granite.png": "/Apartment/static/media/Granite.f1fd7a28893634175ee4.png",
+    "index.html": "/Apartment/index.html",
+    "main.54bed873.css.map": "/Apartment/static/css/main.54bed873.css.map",
+    "main.bb8126f1.js.map": "/Apartment/static/js/main.bb8126f1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54bed873.css",
+    "static/js/main.bb8126f1.js"
+  ]
+}
