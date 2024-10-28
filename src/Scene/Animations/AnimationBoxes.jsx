@@ -63,7 +63,7 @@ export default function AnimationBoxes({ objects }) {
         e.stopPropagation();
         let obj = null;
         let hovering = "none";
-        if (e.distance < 1.2 && type === "move") {
+        if (e.distance < 1.8 && type === "move") {
             if (key === "SmartHome") {
                 hovering = "SmartHome";
             }

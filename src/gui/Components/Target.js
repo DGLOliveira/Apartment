@@ -20,6 +20,7 @@ export default function Target() {
                     {gameState.hover === "Monitor" && <RiShutDownLine />}
                     {gameState.hover === "PC" && <RiShutDownLine />}
                     {gameState.hover === "SmartTV" && <RiShutDownLine />}
+                    {gameState.hover === "TVRemote" && <RiShutDownLine />}
                 </>
                 }
             </div>

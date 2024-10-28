@@ -30,9 +30,9 @@ export default function App() {
     }}
     >Loading...</div>;
     const handleEscape = (e) => {
-        if (e.key === "Escape") {
+        if (e.key === "Escape" && !gameState.paused) {
             console.log("Escape pressed");
-            gameState.setPaused(!gameState.paused);
+            gameState.setPaused(true);
         }
     }
  
