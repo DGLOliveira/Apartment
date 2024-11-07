@@ -51,3 +51,45 @@
     filter: drop-shadow(0px 0px 1px white);
     z-index: 5;
 }
+
+#menu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 5;
+    padding:25px;
+    border-radius: 4vh;
+    border-width: 5px;
+    background: hsl(0, 0%, 20%);
+    color: white;
+}
+#menu>button{
+    width: 20vh;
+    height: 7vh;
+    font-size: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 5;
+    border-radius: 4vh;
+    border-width: 5px;
+    margin:5px;
+    background: hsl(0, 0%, 20%);
+    color: white;
+    cursor: pointer;
+
+}
+#menu>h1{
+    font-size: 6vh;
+    margin-bottom: 1vh;
+    margin-top: 0;
+    color: white;
+}
+#resumeGame{
+}

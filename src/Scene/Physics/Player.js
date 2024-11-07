@@ -80,7 +80,7 @@ export const Player = () => {
   }, [gameState.player.lockedOn]);
   useFrame((state) => {
     ref.current.getWorldPosition(camera.position);
-    if (!gameState.player.lockedOn) {
+    if (!gameState.player.lockedOn && !gameState.paused) {
     frontVector.set(0, 0, Number(backward) - Number(forward));
     sideVector.set(Number(left) - Number(right), 0, 0);
     camera.rotation.set(

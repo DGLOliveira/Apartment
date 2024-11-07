@@ -73,9 +73,9 @@ export default function setShadows(nodes) {
                     }
                     //List of objects inside a group that can cast a shadow
                     if (
-                        grandchild.name === "Cube012_1" || /*Big Couch frame */
+                        grandchild.name === "Mesh_27" || /*Big Couch frame */
                         grandchild.name === "Cube012_2" || /*Big Couch frame */
-                        grandchild.name === "Cube016" || /*Small Couch frame */
+                        grandchild.name === "Mesh_29" || /*Small Couch frame */
                         grandchild.name === "Cube016_1" || /*Small Couch frame */
                         grandchild.name === "Cube007_1" ||/*TV Table*/
                         grandchild.name === "Cube011_1" ||/*Monitor 1 frame*/
@@ -97,7 +97,6 @@ export default function setShadows(nodes) {
                         grandchild.name === "Cube027" || /*Kitchen Chair*/
                         grandchild.name === "Cube027_1" || /*Kitchen Chair*/
                         grandchild.name === "Cube027_2" || /*Kitchen Chair*/
-                        grandchild.name === "Cube052" ||/*Aquarium*/
                         grandchild.name === "Cube145" ||/*Bed Frame*/
                         grandchild.name === "Cube146" ||/*Bed */
                         grandchild.name === "Cube148" ||/*End Table*/

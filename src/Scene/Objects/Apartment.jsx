@@ -30,7 +30,7 @@ import setColors from "../Materials/setColors.js";
 
 import RoomObj from "./room3.1.glb";
 
-export default function Apartment({ obstacleObjects, setObstacleObjects, lockedPlayer, setLockedPlayer }) {
+export default function Apartment({ obstacleObjects, setObstacleObjects }) {
 
     const group = useRef(null);
     const { nodes, materials, animations } = useGLTF(RoomObj);
@@ -347,15 +347,6 @@ export default function Apartment({ obstacleObjects, setObstacleObjects, lockedP
                 if(!gameState.player.lockedOn){
                     document.exitPointerLock();
                 }
-                /*setLockedPlayer({
-                    locked: !lockedPlayer.locked,
-                    position: [obj.parent.position.x, obj.parent.position.y, obj.parent.position.z + 0.25],
-                    target: [obj.parent.position.x, obj.parent.position.y, obj.parent.position.z],
-                    zoom: 1.5
-                });
-                if (!lockedPlayer.locked) {
-                    document.exitPointerLock();
-                }*/
             } else if (obj.parent.name === "Monitor") {
                 camera.lookAt(obj.parent.position);
                 gameState.setPlayer({
@@ -367,16 +358,7 @@ export default function Apartment({ obstacleObjects, setObstacleObjects, lockedP
                 });
                 if(!gameState.player.lockedOn){
                     document.exitPointerLock();
-                }/*
-                setLockedPlayer({
-                    locked: !lockedPlayer.locked,
-                    position: [obj.parent.position.x, obj.parent.position.y, obj.parent.position.z + 1],
-                    target: [obj.parent.position.x, obj.parent.position.y, obj.parent.position.z],
-                    zoom: 2
-                });
-                if (!lockedPlayer.locked) {
-                    document.exitPointerLock();
-                }*/
+                }
             } else if (obj.parent.name === "TVRemote" || obj.parent.name === "SmartTV") {
                 camera.lookAt(nodes.SmartTV.position);
                 gameState.setPlayer({
@@ -389,15 +371,6 @@ export default function Apartment({ obstacleObjects, setObstacleObjects, lockedP
                 if(!gameState.player.lockedOn){
                     document.exitPointerLock();
                 }
-                /*setLockedPlayer({
-                    locked: !lockedPlayer.locked,
-                    position: [nodes.SmartTV.position.x, nodes.SmartTV.position.y - 0.15, nodes.SmartTV.position.z + 2.5],
-                    target: [nodes.SmartTV.position.x, nodes.SmartTV.position.y, nodes.SmartTV.position.z],
-                    zoom: 2.8
-                });
-                if (!lockedPlayer.locked) {
-                    document.exitPointerLock();
-                }*/
             }
         }
     };

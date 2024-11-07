@@ -14,7 +14,7 @@ import PC from "./Devices/PC/PC.js";
 import TV from "./Devices/TV/TV.js";
 //import { Computer } from "./Components/Computer.js";
 
-export default function Scene({ lockedPlayer, setLockedPlayer }) {
+export default function Scene() {
 
     const [materialList, setMaterialList] = useState({
         WoodTexture: "",
@@ -40,16 +40,11 @@ export default function Scene({ lockedPlayer, setLockedPlayer }) {
                 <Apartment
                     obstacleObjects={obstacleObjects}
                     setObstacleObjects={setObstacleObjects}
-                    lockedPlayer={lockedPlayer}
-                    setLockedPlayer={setLockedPlayer}
                 />
                 <PC />
                 <TV />
                 <Physics>
-                    <Player
-                        lockedPlayer={lockedPlayer}
-                        setLockedPlayer={setLockedPlayer}
-                    />
+                    <Player />
                     <Debug color="red" scale={1.005} >
                         {obstacleObjects && <Obstacles obstacleObjects={obstacleObjects} />}
                     </Debug>

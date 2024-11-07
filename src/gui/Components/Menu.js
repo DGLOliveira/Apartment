@@ -1,4 +1,4 @@
-import { useEffect, useState, useContext} from "react";
+import { useEffect, useState, useContext } from "react";
 import { GameStateContext } from "../../state/GameState";
 
 export default function Menu() {
@@ -7,30 +7,32 @@ export default function Menu() {
 
     if (gameState.paused) {
         return (
-                <button id="resumeGame"
-                style={{
-                    position: "absolute",
-                    top: "50%",
-                    left: "50%",
-                    width: "20vh",
-                    height: "10vh",
-                    fontSize: "5vh",
-                    transform: "translate(-50%, -50%)",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    flexDirection: "column",
-                    zIndex: "5",
-                    borderRadius: "4vh",
-                    borderWidth: "5px",
-                    background: "hsl(0, 0%, 20%)",
-                    color: "white",
-                    cursor: "pointer",
-                }}
-                    onClick={() => gameState.setPaused(!gameState.paused)}
-                >
-                    Resume
-                </button>
+            <div id="menu">{
+                subMenu === "none" &&
+                <>
+                <h1>Menu</h1>
+                    <button id="resumeGame"
+                        onClick={() => gameState.setPaused(!gameState.paused)}
+                    >
+                        Resume
+                    </button>
+                    <button
+                        id="debugButton"
+                        onClick={() => setSubMenu("Debug")}
+                    >
+                        Debug
+                    </button>
+                </>
+            }
+                {subMenu === "Debug" &&
+                    <>
+                        <button
+                            id="returnButton"
+                            onClick={() => setSubMenu("none")}>
+                            Return
+                        </button>
+                    </>}
+            </div>
         )
     }
     return null;

@@ -8,11 +8,6 @@ export default function App() {
     //const [start, setStart] = useState(false);
     const gameState = useContext(GameStateContext);
     const [hovered, setHovered] = useState("none");
-    const [lockedPlayer, setLockedPlayer] = useState({
-        locked: false,
-        position: [0, 0, 0],
-        target: [0, 0, 0]
-    });
     const Fallback = <div
     style={{
         position:"absolute",
@@ -46,14 +41,8 @@ export default function App() {
 
     return (
         <Suspense fallback={null}>
-            <Scene 
-                lockedPlayer={lockedPlayer}
-                setLockedPlayer={setLockedPlayer}
-            />
-            <GUI 
-                lockedPlayer={lockedPlayer}
-                setLockedPlayer={setLockedPlayer}
-            />
+            <Scene />
+            <GUI />
         </Suspense>
     );
 }

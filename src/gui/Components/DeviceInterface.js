@@ -3,7 +3,7 @@ import { RiShutDownLine } from "react-icons/ri";
 import { GameStateContext } from "../../state/GameState";
 import { DeviceStateContext } from "../../state/DeviceState";
 
-export default function deviceInterface({ lockedPlayer, setLockedPlayer }) {
+export default function deviceInterface() {
     const gameState = useContext(GameStateContext);
     const deviceState = useContext(DeviceStateContext);
 
