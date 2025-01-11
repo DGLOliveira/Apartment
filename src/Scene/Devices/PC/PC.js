@@ -16,7 +16,7 @@ export default function PC() {
             {deviceState.PC.ON ? <iframe
                 style={{border: 0}}
                 className="cloud-computer"
-                src="https://dgloliveira.github.io/Portfolio"
+                src="https://dgloliveira.github.io/Virtual-Desktop/"
                 width={1544*0.72}
                 height={720*0.72}
             />:
